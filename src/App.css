@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+body{
+  background-color: #282c34;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 0.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main Styles */
+.head{
+  font-size: 45px;
+}
+.head-1{
+  color: #F0A01F;
+  font-weight: bolder;
+  text-shadow: rgb(215, 174, 10) 0.5px 0 5px;
+}
+.head-2{
+  color: white;
+}
+
+.top-container{
+  display: flex;
+ align-items: center;
+ margin-top: 1rem;
+ margin-bottom: 0.5rem;
+}
+
+.top-1{
+  /* justify-self: flex-start; */
+  margin: auto;
+  margin-left: 5px;
+}
+
+.top-2{
+  /* border: 2px solid blue; */
+  margin: auto;
+  margin-right: 10px;
+}
+.head-p{
+  font-size: medium;
+  color: white;
+}
+
+.card{
+  background-color: #FC0;
+  color: rgb(32, 30, 30);
+  width: 16rem;
+  height: 20rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(auto,4fr);
+ grid-column-gap: 1.5rem; 
+grid-row-gap: 3.5rem; 
+/* grid-template-columns: repeat(auto-fit, 186px); */
+  
+}
+.card:hover{
+  transform: scale(1.02);
+}
+.card >img{
+  width: inherit;
+  transform: scale(1.05);
+  position: absolute;
+  padding-left: 3rem;
+  padding-top: 1rem;
+ 
+}
+
+.card >h3{
+  margin-left: 20px;
+}
+.card >p>span{
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1180px) {
+  .card{
+    background-color: #FC0;
+    color: rgb(32, 30, 30);
+    width: 16rem;
+    height: 20rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto,4fr);
+   grid-column-gap: 1.5rem; 
+  grid-row-gap: 2rem; 
+  /* grid-template-columns: repeat(auto-fit, 186px); */
+    
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .card{
+    background-color: #FC0;
+    color: rgb(32, 30, 30);
+    width: 16rem;
+    height: 25rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto,4fr);
+   grid-column-gap: 1.5rem; 
+  grid-row-gap: 2rem; 
+  /* grid-template-columns: repeat(auto-fit, 186px); */
+    
+  }
+}
